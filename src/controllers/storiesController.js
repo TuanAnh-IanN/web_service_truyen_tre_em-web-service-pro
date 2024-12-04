@@ -59,8 +59,7 @@ const StoriesController = {
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
-  }
-};
+  },
 
 getStoriesByGenre: async (req, res) => {
   try {
@@ -73,6 +72,8 @@ getStoriesByGenre: async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 },
+
+};
 
 
 module.exports = StoriesController;
